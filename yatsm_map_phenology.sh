@@ -4,7 +4,7 @@
 #$ -N map_phenology
 #$ -j y
 
-source ~/modules.sh
+source ~/conda/bin/activate yatsm
 
 if [ -z "$1" ]; then
     echo "Error - please specify a directory with extraced Landsat archives. Usage:"

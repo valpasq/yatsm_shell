@@ -4,7 +4,7 @@
 #$ -N map_change
 #$ -j y
 
-source ~/modules.sh
+source ~/conda/bin/activate yatsm
 
 if [ -z "$1" ]; then
     echo "Error - please specify a directory with extraced Landsat archives. Usage:"
@@ -20,9 +20,9 @@ startdate=1982-01-01
 enddate=2015-12-31
 
 # Generate change map
-yatsm -v changemap first --magnitude $startdate $enddate ./run7_maps/run7_changemap_first.gtif
+yatsm -v changemap first --magnitude $startdate $enddate ./changemap_first.gtif
 
-yatsm -v changemap last --magnitude $startdate $enddate ./run7_maps/run7_changemap_last.gtif
+yatsm -v changemap last --magnitude $startdate $enddate ./changemap_last.gtif
 
-yatsm -v changemap num $startdate $enddate ./run7_maps/run7_changemap_num.gtif
+yatsm -v changemap num $startdate $enddate ./changemap_num.gtif
 
