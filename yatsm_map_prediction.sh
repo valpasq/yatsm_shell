@@ -18,5 +18,5 @@ predictdate=$2
 run=$3
 
 # Generate change map
-yatsm -v map --result ./${run}_YATSM/ predict $predictdate ${predictdate}_prediction_${run}.gtif
+yatsm -v map --result ./${run}_YATSM/ predict $predictdate ${run}_prediction_${predictdate}.gtif
 
