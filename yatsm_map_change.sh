@@ -20,8 +20,8 @@ startdate=1982-01-01
 enddate=2015-12-31
 
 # Generate change map
-yatsm -v changemap --result ./${run}_YATSM/ first $startdate $enddate ./${run}_changemap_first.gtif
+yatsm -v changemap --result ./YATSM_${run}/ first $startdate $enddate ./${run}_changemap_first.gtif
 
-yatsm -v changemap --result ./${run}_YATSM/ last $startdate $enddate ./${run}_changemap_last.gtif
+yatsm -v changemap --result ./YATSM_${run}/ last $startdate $enddate ./${run}_changemap_last.gtif
 
-yatsm -v changemap --result ./${run}_YATSM/ num $startdate $enddate ./${run}_changemap_num.gtif
+yatsm -v changemap --result ./YATSM_${run}/ num $startdate $enddate ./${run}_changemap_num.gtif
