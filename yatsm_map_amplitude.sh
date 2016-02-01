@@ -1,5 +1,5 @@
 #!/bin/bash
-#$ -l h_rt=72:00:00
+#$ -l h_rt=24:00:00
 #$ -V
 #$ -N map_amplitudes
 #$ -j y
@@ -42,6 +42,7 @@ yatsm -v map --band 4 \
 
 # Band 5
 yatsm -v map --band 5 \
+--result ./YATSM_${run} \
 --ndv -9999 --before --amplitude coef $date ./harm_b5.gtif
 
 # Band 6

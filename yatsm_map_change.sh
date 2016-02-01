@@ -1,5 +1,5 @@
 #!/bin/bash
-#$ -l h_rt=72:00:00
+#$ -l h_rt=24:00:00
 #$ -V
 #$ -N map_change
 #$ -j y
@@ -14,6 +14,7 @@ fi
 here=$1
 cd $here
 
+# Second input is run name/results folder, e.g. /YATSM_run1 = "run1"
 run=$2
 
 startdate=1982-01-01

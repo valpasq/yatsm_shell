@@ -1,5 +1,5 @@
 #!/bin/bash
-#$ -l h_rt=72:00:00
+#$ -l h_rt=24:00:00
 #$ -V
 #$ -N map_phenology
 #$ -j y

@@ -17,6 +17,8 @@ cd $here
 predictdate=$2
 run=$3
 
-# Generate change map
-yatsm -v map --result ./${run}_YATSM/ predict $predictdate ${run}_prediction_${predictdate}.gtif
+prefix=$4
 
+# Generate change map
+yatsm -v map --result ./${run}_YATSM/ --refit_prefix $prefix \
+	predict $predictdate ${run}_prediction_${predictdate}.gtif
